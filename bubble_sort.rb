@@ -9,8 +9,7 @@
 # 				swapped = true
 # 			end
 # 		end
-# 	end while swapped
-# 	arr
+# 	end while swapped# 	arr
 # end
 
 # Optimized bubble_sort
