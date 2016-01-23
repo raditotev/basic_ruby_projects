@@ -50,13 +50,13 @@ module Enumerable
 					break
 				end
 			end
-			if self[i] == true
+			if self[i]
 				return true
 				break
 			end
 			i += 1
 		end
-		return true
+		return false
 	end
 
 	def my_none?
@@ -99,16 +99,17 @@ module Enumerable
 	end
 
 	def my_inject
+		array = self.to_a
 		i = 0
-		sum = self[i]
-		while i + 1 < self.size
-			sum = yield(sum, self[i+1])
+		sum = array[i]
+		while i + 1 < array.size
+			sum = yield(sum, array[i + 1])
 			i += 1
 		end
 		sum
 	end
 
-	def multiply_els
+	def multiply_elements
 		self.my_inject{|sum, el| sum * el}
 	end
 end
