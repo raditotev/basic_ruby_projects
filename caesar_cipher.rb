@@ -1,4 +1,4 @@
-def caeser_cypher string, shift
+def caesar_cypher string = "", shift = 0
 	alphabet = ('A'..'z').to_a
 	cyphered_word = ""
 
@@ -13,12 +13,14 @@ def caeser_cypher string, shift
 			cyphered_word += l
 		end
 	end
-	puts cyphered_word
+	cyphered_word
 end
 
-print "Enter text: "
-string = gets.chomp
-print "Enter number for shift: "
-shift = gets.chomp.to_i
+# Commented for testing purposes
 
-caeser_cypher string, shift
+# print "Enter text: "
+# string = gets.chomp
+# print "Enter number for shift: "
+# shift = gets.chomp.to_i
+
+# puts caesar_cypher string, shift
