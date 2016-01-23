@@ -1,19 +1,5 @@
-# def bubble_sort arr
-# 	n = arr.length
-# 	count  = 0
-# 	begin
-# 		swapped = false
-# 		for i in 1..n-1
-# 			if arr[i - 1] > arr[i]
-# 				arr[i - 1], arr[i] = arr[i], arr[i - 1]
-# 				swapped = true
-# 			end
-# 		end
-# 	end while swapped# 	arr
-# end
-
 # Optimized bubble_sort
-def bubble_sort arr
+def bubble_sort arr = []
 	n = arr.size
 	swapped = true
 	while swapped
@@ -29,5 +15,6 @@ def bubble_sort arr
 	arr
 end
 
+# Commented out for testing purposes
 
-p bubble_sort([3,4,5,2,1])
+# print bubble_sort([3,4,5,2,1])
